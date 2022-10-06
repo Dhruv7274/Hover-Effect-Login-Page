@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mian_container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg,red,white);
+    padding: 10px;
+}
+
+.login_container{
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 5px;
+}
+.title_box{
+    padding: 5px;
+    border-bottom: 1px solid red;
+    color: red;
+    text-align: center;
+    font-size: 25px;
+}
+.login_container form{
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.login_container form .input_box{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid red;
+    margin-top: 20px;
+    position: relative;
+}
+
+.input_box input{
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    background: none;
+    outline: none;
+    position: absolute;
+    bottom: 0;
+    padding: 0 5px;
+    border: none;
+}
+
+.input_box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    pointer-events: none;
+    color: rgb(241, 172, 172);
+    transition: 0.5s;
+}
+
+.input_box input:focus ~ label,
+.input_box input:valid ~ label{
+    top: 0;
+    color: red;
+    font-weight: bold;
+}
+.login_container .forgot_link{
+    text-align: end;
+    margin-top: 10px;
+}
+
+.login_container .forgot_link a{
+    text-decoration: none;
+    color: rgb(240, 138, 138);
+    display: block;
+}
+
+.forgot_link a:hover{
+    color: red;
+}
+
+.forgot_link a:active{
+    color: blue;
+    transform: scale(0.9);
+}
+.btn{
+    margin-top: 25px;
+    padding: 5px;
+   
+    
+}
+.btn input{
+    width: 100%;
+    border-radius: 25px;
+    border: none;
+    padding: 5px;
+    background: linear-gradient(45deg, red,gray);
+}
+.reg_link{
+    text-align: center;
+    margin-top: 10px;
+}
